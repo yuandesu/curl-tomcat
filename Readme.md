@@ -37,13 +37,13 @@ http.forwarded.proto=http
 
 ## 重要な発見
 
-### ? 成功した設定
+### 成功した設定
 - **Nginx設定**: `proxy_set_header X-Real-IP $remote_addr;`
 - **Tomcat設定**: 
   - `-Ddd.trace.client-ip.header=x-real-ip`
   - `-Ddd.trace.client-ip.enabled=true`
 
-### ? 失敗した設定
+### 失敗した設定
 - **誤ったパラメータ名**: `-Ddd.trace.client.ip.enabled=true` (ドット区切り)
 
 ## パラメータ名の違い
