@@ -1,0 +1,8 @@
+FROM nginx:1.28.0
+RUN <<RUNEND
+apt-get update -y
+apt-get install -y tcpdump
+curl -L -o /tmp/ngx_http_datadog_module-arm64-1.28.0.so.tgz https://github.com/DataDog/nginx-datadog/releases/download/v1.6.2/ngx_http_datadog_module-arm64-1.28.0.so.tgz
+tar -xzf /tmp/ngx_http_datadog_module-arm64-1.28.0.so.tgz -C /etc/nginx/modules
+rm /tmp/ngx_http_datadog_module-arm64-1.28.0.so.tgz
+RUNEND

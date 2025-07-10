@@ -1,0 +1,3 @@
+FROM tomcat:9
+ADD 'https://dtdg.co/latest-java-tracer' /opt/dd-java-agent.jar
+COPY index.html /usr/local/tomcat/webapps/ROOT/index.html

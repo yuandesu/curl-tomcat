@@ -1,0 +1,25 @@
+# Environment files
+.env
+*.env
+sandbox.docker.env
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp 
